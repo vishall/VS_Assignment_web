@@ -29,11 +29,11 @@ public class HomePageStepDefs {
 
     }
 
-    @And("user can see 100 results")
-    public void user_can_see_100_results() {
+    @And("^user can see (\\d+) results for various cryptos$")
+    public void user_can_see_100_results_for_various_cryptos(int resultCount) {
 
         List<WebElement> totalProducts = base.getListOfElements(homePage.allCurrencies);
-        Assert.assertEquals("Currency count is less than 100", 100, totalProducts.size());
+        Assert.assertEquals("Currency count is less than 100", resultCount, totalProducts.size());
 
     }
 
