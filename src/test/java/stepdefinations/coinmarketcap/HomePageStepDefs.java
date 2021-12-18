@@ -33,7 +33,7 @@ public class HomePageStepDefs {
     public void user_can_see_100_results_for_various_cryptos(int resultCount) {
 
         List<WebElement> totalProducts = base.getListOfElements(homePage.allCurrencies);
-        Assert.assertEquals("Currency count is less than 100", resultCount, totalProducts.size());
+        Assert.assertEquals("Cryptocurrency result count doesn't match", resultCount, totalProducts.size());
 
     }
 
