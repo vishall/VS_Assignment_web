@@ -10,9 +10,8 @@ public class PropertiesSetUp {
     private static final String DRIVER_FOLDER = FileHelper.WORKING_DIRECTORY_PATH + FileHelper.FILE_SEPARATOR + "Executables" + FileHelper.FILE_SEPARATOR;
 
     private static final String CHROME_DRIVER_PATH = DRIVER_FOLDER + "chrome" + FileHelper.FILE_SEPARATOR;
-    private static final String FIREFOX_DRIVER_PATH = DRIVER_FOLDER + "firefox" + FileHelper.FILE_SEPARATOR;
-
     private static final String MAC_CHROME_DRIVER = CHROME_DRIVER_PATH + "chromedriverMACOS";
+    private static final String FIREFOX_DRIVER_PATH = DRIVER_FOLDER + "firefox" + FileHelper.FILE_SEPARATOR;
     private static final String MAC_FIREFOX_DRIVER = FIREFOX_DRIVER_PATH + "geckodriverMACOS";
 
 

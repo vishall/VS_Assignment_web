@@ -1,14 +1,13 @@
 package utils.helpers;
 
-import utils.RuntimeProperties;
 import enums.Environment;
+import utils.RuntimeProperties;
+
 import java.io.IOException;
 
-public class SiteUrl
-{
+public class SiteUrl {
 
-    public static String url(Environment environment) throws IOException
-    {
+    public static String url(Environment environment) throws IOException {
         String url = "";
 
         if (RuntimeProperties.environment == Environment.TEST) {

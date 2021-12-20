@@ -1,10 +1,10 @@
 package utils;
 
-import utils.SetUp.drivers.DriverSetUp;
-import utils.helpers.FileHelper;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import utils.SetUp.drivers.DriverSetUp;
+import utils.helpers.FileHelper;
 
 import java.io.IOException;
 
@@ -21,12 +21,10 @@ public class Hooks {
         TestRunner.config = FileHelper.readProperties();
         base.scenario = scenario;
         base.driver = new DriverSetUp().get(base);
-
     }
 
     @After
     public void tearDown() throws Exception {
-
         base.driver.quit();
     }
 }
