@@ -12,7 +12,9 @@ import java.util.Map;
         features = {"src/test/resources/features"},
         glue = {"utils", "stepdefinations"},
         tags = "@HomePage",
-        plugin = {"pretty", "html:target/html", "json:target/reports/cucumber.json"})
+        plugin = {"pretty", "html:target/index.html", "json:target/reports/cucumber.json"},
+        monochrome = true
+        )
 public class TestRunner {
     public static Map<String, String> config;
 }
